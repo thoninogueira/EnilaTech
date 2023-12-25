@@ -1,12 +1,8 @@
+// src/models/Negociacao.js
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
 const Negociacao = sequelize.define('Negociacao', {
-  id: {
-    type: DataTypes.INTEGER,
-    primaryKey: true,
-    autoIncrement: true,
-  },
   ativo: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -19,10 +15,13 @@ const Negociacao = sequelize.define('Negociacao', {
     type: DataTypes.DECIMAL(10, 2),
     allowNull: false,
   },
-  status: {
-    type: DataTypes.STRING,
-    allowNull: false,
-    defaultValue: 'ativa',
+  data: {
+    type: DataTypes.DATE,
+    defaultValue: DataTypes.NOW,
+  },
+  dataFechamento: {
+    type: DataTypes.DATE,
+    allowNull: true,
   },
 });
 
