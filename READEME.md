@@ -18,7 +18,7 @@ FlaxTrade é uma plataforma de negociação avançada para ativos financeiros. F
 
 ## Instalação
 
-Certifique-se de ter o Node.js e o **npm** instalados.
+Certifique-se de ter o Node.js e o npm instalados.
 
 1. Clone o repositório:
 
