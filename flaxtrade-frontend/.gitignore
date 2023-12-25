@@ -1,0 +1,11 @@
+# Arquivos temporários
+node_modules/
+build/
+dist/
+
+# Arquivos de configuração local (ex: .env)
+.env
+
+# Dependendo do seu ambiente de desenvolvimento
+.vscode/
+.idea/
