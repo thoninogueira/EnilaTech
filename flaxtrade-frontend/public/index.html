@@ -1,33 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <title>FlaxTrade</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sua descrição aqui">
-  <meta name="keywords" content="palavras-chave, aqui">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Descrição do seu projeto">
+    <meta name="keywords" content="FlaxTrade, Negociações, Ativos">
+    <meta name="author" content="Seu Nome">
 
-  <!-- Adicione mais meta tags conforme necessário -->
+    <!-- Título da Página -->
+    <title>FlaxTrade - Plataforma de Negociações</title>
 
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
-  <link rel="stylesheet" href="https://unpkg.com/normalize.css/normalize.css">
+    <!-- Favicons (coloque os ícones na pasta public) -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <!-- Adicione links para folhas de estilo adicionais aqui -->
+    <!-- Estilos do Bootstrap (coloque os arquivos do Bootstrap na pasta public/css) -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Suporte para tema escuro e claro -->
-  <meta name="color-scheme" content="light dark">
-  <meta name="supported-color-schemes" content="light dark">
+    <!-- Estilos Personalizados (coloque os arquivos de estilo na pasta public/css) -->
+    <link href="/css/style.css" rel="stylesheet">
 
-  <!-- Adicione mais meta tags para temas escuros e claros conforme necessário -->
-
+    <!-- Outras Folhas de Estilo, se necessário -->
 </head>
 <body>
-  <noscript>
-    Você precisa habilitar o JavaScript para executar este aplicativo.
-  </noscript>
-  <div id="root"></div>
 
-  <!-- Adicione links para scripts adicionais aqui -->
+<!-- Barra de Navegação -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">FlaxTrade</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/negociacoes-ativas">Negociações Ativas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/historico">Histórico</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/painel-controle">Painel de Controle</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
+<!-- Conteúdo da Página -->
+<div class="container mt-4">
+    <!-- O conteúdo da página será renderizado aqui usando React Router -->
+    <div id="root"></div>
+</div>
+
+<!-- Scripts do Bootstrap (coloque os arquivos do Bootstrap na pasta public/js) -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Scripts Personalizados (coloque os arquivos de script na pasta public/js) -->
+<script src="/js/main.js"></script>
+
+<!-- Outros Scripts, se necessário -->
 </body>
 </html>
