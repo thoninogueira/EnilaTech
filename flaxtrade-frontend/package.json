@@ -1,10 +1,10 @@
 {
   "name": "flaxtrade",
   "version": "1.0.0",
-  "description": "Sua descrição do projeto aqui",
+  "description": "FlaxTrade é uma plataforma de negociações financeiras projetada para oferecer uma experiência de usuário eficiente e segura. Desenvolvida com foco na simplicidade e desempenho, a FlaxTrade permite que usuários realizem negociações de ativos financeiros, monitorando ativos ativos, histórico de transações e fornecendo um painel de controle intuitivo.\n\nRecursos Principais:\n\n- Negociações Ativas: Acompanhe em tempo real suas negociações ativas, fornecendo informações detalhadas sobre ativos, quantidades e preços.\n- Histórico de Transações: Mantenha um histórico completo de suas transações passadas, proporcionando uma visão abrangente das atividades de negociação.\n- Painel de Controle: Personalize suas preferências e configurações por meio de um painel de controle fácil de usar.\n- Interface Intuitiva: Uma interface de usuário moderna e intuitiva, otimizada para uma experiência de navegação fluida.\n\nTecnologias Utilizadas:\n\n- Backend: Node.js com Express para construção da API.\n- Frontend: React para uma interface de usuário dinâmica e responsiva.\n- Persistência de Dados: Banco de dados PostgreSQL para armazenamento seguro e eficiente de informações.\n- Ferramentas Adicionais: Jest para testes, ESLint e Prettier para garantir qualidade de código.\n\nObjetivo do Projeto:\n\nO objetivo da FlaxTrade é fornecer uma plataforma robusta e confiável para facilitar negociações financeiras, atendendo às necessidades tanto de investidores iniciantes quanto experientes. A segurança e a facilidade de uso são prioridades, garantindo que os usuários possam concentrar-se nas suas estratégias de negociação.",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js>", 
+    "start": "react-scripts start", 
     "dev": "nodemon server.js", 
     "test": "jest", 
     "lint": "eslint .", 
@@ -24,7 +24,7 @@
     "express": "^4.17.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-   
+       
   },
   "devDependencies": {
     
@@ -36,7 +36,11 @@
     "vercel": "^24.0.3",
     "jsdoc": "^3.6.7", 
     "npm-run-path":"5.2.0",
-    "pre-flight":"1.1.1"
+    "pre-flight":"1.1.1",
+    "npm-run-all": "4.1.5",
+    "npm-package-json-lint": "7.1.0",
+    "npm-registry-fetch": "16.1.0",
+    "@pnpm/npm-conf": "2.2.2"
 
   },
   "engines": {
