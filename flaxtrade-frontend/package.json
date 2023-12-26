@@ -1,15 +1,48 @@
 {
-  "name": "flaxtrade-frontend",
+  "name": "flaxtrade",
   "version": "1.0.0",
+  "description": "Sua descrição do projeto aqui",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    // ... outras scripts
+    "start": "node C:UsersAlineDarlineOneDriveMinisterioDoTrabalhoEPrevidenciaFlaxetradeFlaxtradeFrontend>", 
+    "dev": "nodemon C:UsersAlineDarlineOneDriveMinisterioDoTrabalhoEPrevidenciaFlaxetradeFlaxtradeFrontend", 
+    "test": "jest", 
+    "lint": "eslint .", 
+    "format": "prettier --write .", 
+    "build": "webpack", 
+    "deploy": "vercel", 
+    "docs": "jsdoc -c jsdoc.config.json" 
   },
+  "keywords": ["flaxtrade", "negociações", "financeiro"],
+  "author": "Seu Nome",
+  "license": "MIT",
   "dependencies": {
+    
+    "express": "^4.17.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    // ... outras dependências
+    "react-dom": "^17.0.2"
+    ,"npm-run-path":"5.2.0"
+  },
+  "devDependencies": {
+    
+    "nodemon": "^2.0.15",
+    "jest": "^27.4.0",
+    "eslint": "^8.56.0",
+    "prettier": "^2.4.1",
+    "webpack": "^5.68.0",
+    "vercel": "^24.0.3",
+    "jsdoc": "^3.6.7"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": ["last 2 versions", "> 1%"],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,json,md,css,scss}": ["prettier --write", "eslint --fix", "git add"]
   }
 }
