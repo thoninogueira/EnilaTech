@@ -1,13 +1,14 @@
+// src/components/PainelControle.js
 import React from 'react';
 
-function PainelControle() {
-  // Lógica para exibir painel de controle personalizável
+const PainelControle = () => {
+  // Lógica para configurar o painel de controle
   return (
     <div>
       <h2>Painel de Controle</h2>
-      {/* Renderizar opções de configuração */}
+      {/* Renderize as opções de configuração */}
     </div>
   );
-}
+};
 
 export default PainelControle;
