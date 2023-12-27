@@ -1,0 +1,6 @@
+# Arquivos temporários
+node_modules/
+
+# Dependendo do seu ambiente de desenvolvimento
+.vscode/
+.idea/
