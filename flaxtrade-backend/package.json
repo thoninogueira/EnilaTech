@@ -1,5 +1,5 @@
 {
-  "name": "françatech-backend",
+  "name": "francatech-backend",
   "version": "1.0.0",
   "description": "Backend for the FrançaTech trading platform",
   "main": "app.js",
