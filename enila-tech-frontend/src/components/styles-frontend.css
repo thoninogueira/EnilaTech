@@ -1,0 +1,122 @@
+/* Adapte conforme necessário para o seu design */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #001F3F;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    width: 70%;
+    float: left;
+}
+
+canvas {
+    margin-top: 20px;
+    display: block;
+}
+
+aside {
+    height: 200px;
+    width: 30%;
+    background-color: #fff; /* Alterado para branco */
+    float: right;
+}
+
+footer {
+    background-color: #001F3F;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    clear: both;
+    height: 30px;
+}
+
+#logo {
+    color: white;
+    font-size: larger;
+    text-align: center;
+}
+
+.texto {/* remove margens inseridas pelo navegador */
+    *{ margin:0; } 
+     
+    /* TAGS */
+    header{ 
+        height: 100px; /* altura */
+        background-color: red; /* fundo: vermelho */
+    }
+    section{ 
+        height: 500px; /* altura */
+        width: 70%; /* largura */
+        background-color: blue; /* fundo: azul */
+        float:left; /* alinhar à esquerda */
+    }
+    aside{ 
+        height: 500px; /* altura */
+        width: 30%; /* largura */
+        background-color: green; /* fundo: verde */
+        float:right; /* alinhar à direita */
+    }
+    footer{
+        clear:both; /* corrige problemas de alinhamento */
+        height: 30px; /* altura */
+        background-color: grey;/* fundo cinza */
+        text-align: center; /* texto centralizado */
+    }
+     
+    /* ID */
+    #logo{
+        color:white; /* cor texto: branco */
+        font-size: larger; /* fonte maior */
+        text-align: center; /* texto-centralizado */
+    }
+     
+    /* CLASS */
+    .texto{
+        color: rgb(3, 90, 172); /* cor azul */
+    }
+    color: rgb(3, 90, 172);
+}

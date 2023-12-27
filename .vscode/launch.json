@@ -1,6 +1,13 @@
 {
     "configurations": [
         {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "msedge",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
@@ -21,7 +28,7 @@
             "runtimeArgs": [
                 "--remote-debugging-port=9222"
             ],
-            "url": "c:\\Users\\Aline_Darline\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.3\\out\\startpage\\index.html", // Provide your project's url to finish configuring
+            "url": "http://localhost:8080", // Substitua pela URL do seu projeto
             "presentation": {
                 "hidden": true
             }
@@ -34,7 +41,7 @@
                 "--headless",
                 "--remote-debugging-port=9222"
             ],
-            "url": "c:\\Users\\Aline_Darline\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.3\\out\\startpage\\index.html", // Provide your project's url to finish configuring
+            "url": "http://localhost:8080", // Substitua pela URL do seu projeto
             "presentation": {
                 "hidden": true
             }
@@ -43,7 +50,7 @@
             "type": "vscode-edge-devtools.debug",
             "name": "Open Edge DevTools",
             "request": "attach",
-            "url": "c:\\Users\\Aline_Darline\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.3\\out\\startpage\\index.html", // Provide your project's url to finish configuring
+            "url": "http://localhost:8080", // Substitua pela URL do seu projeto
             "presentation": {
                 "hidden": true
             }

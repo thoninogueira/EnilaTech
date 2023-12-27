@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>FrançaTech - Plataforma de Negociações</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Descrição do seu projeto">
+    <meta name="keywords" content="FrançaTech, Negociações, Ativos">
+    <meta name="author" content="Thoni Nogueira">
+    <link rel="stylesheet" href="styles-frontend.css">
+    <!-- Estilos do Bootstrap (coloque os arquivos do Bootstrap na pasta public/css) -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!-- Favicons (coloque os ícones na pasta public) -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+                <div id="logo">
+    <img src="imagens/OIG.jpg" alt="Logo da FrançaTech" width="80" height="80">
+</div>
+
+    </header>
+
+    <!-- Principal região -->
+    <main>
+        <!-- Seção à esquerda -->
+        <section>
+            <h1>Home</h1>
+            <p class="texto">Bem-vindo ao meu site.</p>
+            <p class="texto">Tudo bem?</p>
+
+            <!-- Barra de Navegação -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container">
+                        <a class="navbar-brand" href="/enila-tech-frontend/src/App.js">FrançaTech</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/enila-tech-frontend/src/components/Home.js">Home</a> 
+                                </li> >
+            </nav>
+        </section>
+
+        <!-- Conteúdo da Página -->
+        <div class="container mt-4">
+            <!-- O conteúdo da página será renderizado aqui usando React Router -->
+            <div id="root"></div>
+        </div>
+
+        <!-- Menu lateral direito -->
+        <aside>
+            <p>Barra lateral.</p>
+        </aside>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        Todos os direitos reservados.
+    </footer>
+
+    <!-- Scripts do Bootstrap (coloque os arquivos do Bootstrap na pasta public/js) -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Scripts Personalizados (coloque os arquivos de script na pasta public/js) -->
+    <script src="/js/main.js"></script>
+</body>
+</html>

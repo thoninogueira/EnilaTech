@@ -1,7 +1,7 @@
 {
-  "name": "francatech-backend",
+  "name": "enilatech-backend",
   "version": "1.0.0",
-  "description": "Backend for the FrançaTech trading platform",
+  "description": "Backend for the EnilaTech trading platform",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",

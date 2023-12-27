@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EnilaTech - Login</title>
+    <link rel="stylesheet" href="login-styles.css">
+    <!-- Adicione links para as fontes que você escolheu usar -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Adicione isso no head -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <form id="login" class="login">
+            <h1>LOGIN</h1>
+                <label for="emailCpf">E-mail ou CPF:</label>
+                <input type="text" id="emailCpf" name="emailCpf" required>
+                
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+        
+                <div class="g-recaptcha" data-sitekey="SUA_CHAVE_PUBLICA"></div>
+                
+                <button onclick="validateEmailOrCpf()">Entrar</button>
+                <div class="options">
+                    <a href="#" onclick="showRegistrationForm()">Cadastre-se</a>
+                    <span> | </span>
+                    <a href="#" onclick="showForgotPasswordForm()">Esqueci a Senha</a>
+                </div>
+                
+        </form>
+        
+        <form id="registration" class="hidden">
+            <h1>CADASTRO</h1>
+        
+            <div class="form-group">
+                <label for="registration-name">Nome:</label>
+                <input type="text" id="registration-name" name="registration-name" required>
+
+                <label for="registration-surname">Sobrenome:</label>
+                <input type="text" id="registration-surname" name="registration-surname" required>          
+            </div>
+        
+            
+            <div class="form-group">
+                <label for="cpfCnpj">CPF ou CNPJ:</label>
+                <input type="text" id="cpfCnpj" name="cpfCnpj" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="registration-email">E-mail:</label>
+                <input type="email" id="registration-email" name="registration-email" required>
+
+                <label for="confirm-email">Confirmar E-mail:</label>
+                <input type="email" id="confirm-email" name="confirm-email" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="registration-marital-status">Estado Civil:</label>
+                <input type="text" id="registration-marital-status" name="registration-marital-status" required>
+
+                <label for="registration-gender">Genero:</label>
+                <input type="gender" id="registration-gender" name="registration-gender" required>
+
+                <label for="registration-gender">Genero:</label>
+                <input type="gender" id="registration-gender" name="registration-gender" required>
+
+                <label for="registration-color">Cor:</label>
+                <input type="color" id="registration-color" name="registration-color" required>
+            </div>
+
+                    
+            <div class="form-group">
+                
+            </div>
+        
+            <div class="form-group">
+                <label for="registration-password">Senha:</label>
+                <input type="password" id="registration-password" name="registration-password" required>
+
+                <label for="confirm-password">Confirmar Senha:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+        
+           
+        
+            <!-- Aba de Endereço -->
+            <div class="form-group" id="address-tab">
+                <label for="CEP">CEP:</label>
+                <input type="text" id="CEP" name="CEP" required>
+                <button type="button" onclick="fetchAddress()">Preencher Endereço</button>
+            </div>
+        
+            <div class="form-group hidden" id="address-details">
+                <label for="country">País:</label>
+                <input type="text" id="country" name="country">
+        
+                <label for="state">Estado:</label>
+                <input type="text" id="state" name="state">
+        
+                <label for="city">Cidade:</label>
+                <input type="text" id="city" name="city">
+        
+                <label for="neighborhood">Bairro:</label>
+                <input type="text" id="neighborhood" name="neighborhood">
+        
+                <label for="street">Rua:</label>
+                <input type="text" id="street" name="street">
+        
+                <label for="number">Número:</label>
+                <input type="text" id="number" name="number">
+        
+                <label for="complement">Complemento:</label>
+                <input type="text" id="complement" name="complement">
+            </div>
+
+            
+            <div class="g-recaptcha" data-sitekey="SUA_CHAVE_PUBLICA"></div>
+    
+            <!-- Adicione os demais campos conforme necessário -->
+                                
+            <button type="submit">Cadastrar</button>
+            <button type="button" onclick="showLoginForm()">Voltar</button>
+                
+        </form>
+        
+        <script>
+            // Função para preencher automaticamente o endereço com base no CEP
+            function fetchAddress() {
+                // Lógica para buscar o endereço pelo CEP
+                // Preencher os campos correspondentes
+                // Exemplo de uso de uma API de consulta de CEP
+                // ...
+        
+                // Após preencher o endereço, exibir os detalhes
+                document.getElementById('address-tab').classList.add('hidden');
+                document.getElementById('address-details').classList.remove('hidden');
+            }
+        </script>                              
+        
+        
+        <form id="forgot-password-form" class="hidden">
+            <h1>ESQUECI A SENHA</h1>
+            
+            <label for="cpfCnpj">CPF ou CNPJ:</label>
+            <input type="text" id="cpfCnpj" name="cpfCnpj" required>
+        
+            <label for="fullName">Nome Completo:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        
+            <label for="forgot-email">E-mail de Recuperação:</label>
+            <input type="email" id="forgot-email" name="forgot-email" required>
+        
+            <button type="button" onclick="sendPasswordResetEmail()">Enviar</button>
+            <button type="button" onclick="showLoginForm()">Voltar</button>
+        </form>
+        
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
