@@ -1,6 +1,6 @@
-# FlaxTrade
+# FrançaTech
 
-FlaxTrade é uma plataforma de negociação avançada para ativos financeiros. Facilitamos a negociação de forma eficiente e intuitiva.
+FrançaTech é uma plataforma de negociação avançada para ativos financeiros. Facilitamos a negociação de forma eficiente e intuitiva.
 
 ## Funcionalidades
 
