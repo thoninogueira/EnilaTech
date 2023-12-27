@@ -1,0 +1,13 @@
+# Arquivos temporários
+node_modules/
+
+# Arquivos de log e erro
+logs/
+*.log
+
+# Arquivos de configuração local (ex: .env)
+.env
+
+# Dependendo do seu ambiente de desenvolvimento
+.vscode/
+.idea/
