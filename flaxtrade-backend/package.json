@@ -1,7 +1,7 @@
 {
-  "name": "flaxtrade-backend",
+  "name": "françatech-backend",
   "version": "1.0.0",
-  "description": "Backend for the FlaxTrade trading platform",
+  "description": "Backend for the FrançaTech trading platform",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
